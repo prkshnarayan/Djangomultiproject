@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+{% block extra_css %}
+<link rel="stylesheet" href='/static/css/display.css'>
+{% endblock %}
+{% if status %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">sales_person</th>
+      <th scope="col">email</th>
+      <th scope="col">is_superuser</th>
+      <th scope="col">is_staff</th>
+      <th scope="col">date joined</th>
+      <th scope="col">last_login</th>
+      <th scope="col">UPDATE</th>
+      <th scope="col">DELETE</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for person in employee %}
+    <tr>
+      <th scope="row">{{ person.id }}</th>
+      <td>{{ person.username }}</td>
+      <td>{{ person.email }}</td>
+      <td>{{ person.is_superuser }}</td>
+      <td>{{ person.is_staff }}</td>
+      <td>{{ person.date_joined }}</td>
+      <td>{{ person.last_login }}</td>
+      <td><a href="{% url 'update' person.id %}" class="button" >update</a></td>
+      <td><a href="{% url 'delete' person.id %}" class="button1" >delete</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<h1 style="text-align:center; color:red; margin-top:300px">You are not able to access this page</h1>
+<h1 style="text-align:center; color:red">Please contact Administrator for more details</h1>
+{% endif %}
+{% endblock %}
