@@ -16,7 +16,7 @@
       <th scope="col">is_staff</th>
       <th scope="col">date joined</th>
       <th scope="col">last_login</th>
-      <th scope="col">UPDATE</th>
+<!--      <th scope="col">UPDATE</th>-->
       <th scope="col">DELETE</th>
     </tr>
   </thead>
@@ -30,7 +30,7 @@
       <td>{{ person.is_staff }}</td>
       <td>{{ person.date_joined }}</td>
       <td>{{ person.last_login }}</td>
-      <td><a href="{% url 'update' person.id %}" class="button" >update</a></td>
+<!--      <td><a href="{% url 'update' person.id %}" class="button" >update</a></td>-->
       <td><a href="{% url 'delete' person.id %}" class="button1" >delete</a></td>
     </tr>
   {% endfor %}
