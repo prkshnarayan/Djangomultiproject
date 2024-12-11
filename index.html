@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if status  %}
+
+<h1>Welcome to admin page {{ existuser }}</h1>
+<img src="/static/images/sales_img_3.jpg" alt="Sales_img_3" style="width:100%; height:100%" >
+
+{% else %}
+
+<h1>Welcome to sales page {{ existuser }}</h1>
+<img src="/static/images/istockphoto-1085389362-612x612.jpg" alt="Sales_img_3" style="width:100%; height:100%" >
+
+{% endif %}
+{% endblock %}
