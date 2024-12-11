@@ -20,11 +20,11 @@ from salesapp.models import Student
 #         if exist_user is not None:
 #             if exist_user.is_superuser:
 #                 status="admin"
-#                 return render(request,'index.html',{"existuser":exist_user,"status":status})
+#                 return render(request,'home.html',{"existuser":exist_user,"status":status})
 #
 #             elif exist_user.is_authenticated:
 #                 status="sales"
-#                 return render(request,'index.html',{"existuser":exist_user,"status":status})
+#                 return render(request,'home.html',{"existuser":exist_user,"status":status})
 #         else:
 #             return render(request, 'login.html',{"message":True})
 #
@@ -100,7 +100,7 @@ def home_fun(request):
     exist_user = request.user
     global status
     status = exist_user.is_superuser
-    return render(request, 'index.html', {"existuser": exist_user, "status": status})
+    return render(request, 'home.html', {"existuser": exist_user, "status": status})
 
 
 @login_required
