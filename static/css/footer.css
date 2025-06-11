@@ -1,0 +1,168 @@
+/* FOOTER BASE STYLES */
+.footer {
+    background: #212529;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    color: #0d6efd;
+}
+
+/* FOOTER STRUCTURE */
+.footer .container {
+    position: relative;
+    z-index: 1;
+}
+
+.footer .row {
+    justify-content: space-between;
+}
+
+/* FOOTER ITEM STYLES */
+.footer-item {
+    margin-bottom: 2rem;
+}
+
+.footer-item h4 {
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer-item h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #0d6efd;
+}
+
+/* CONTACT INFO STYLES */
+.footer-item .d-flex {
+    margin-bottom: 1rem;
+    align-items: flex-start;
+}
+
+.footer-item .text-primary {
+    color: #0d6efd !important;
+    font-size: 1.1rem;
+    margin-top: 0.2rem;
+}
+
+.footer-item p.text-white {
+    color: #f8f9fa !important;
+    margin-bottom: 0;
+}
+
+/* OPENING HOURS STYLES */
+.opening-date {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.opening-clock {
+    display: flex;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.opening-clock h6 {
+    color: #ffffff;
+    min-width: 140px;
+    margin-bottom: 0.5rem;
+}
+
+.opening-clock p {
+    color: #adb5bd;
+    margin-bottom: 0;
+}
+
+/* PAYMENT METHODS */
+.footer-item img.img-fluid {
+    max-width: 100%;
+    height: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.footer-item img.img-fluid:hover {
+    opacity: 1;
+}
+
+/* QUICK LINKS & SUPPORT */
+.footer-item a {
+    display: block;
+    margin-bottom: 0.75rem;
+    padding-left: 0;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer-item a i {
+    margin-right: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.footer-item a:hover {
+    padding-left: 5px;
+    color: #0d6efd !important;
+}
+
+.footer-item a:hover i {
+    color: #0d6efd !important;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 992px) {
+    .footer .col-xl-4,
+    .footer .col-xl-2 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .opening-clock {
+        flex-direction: column;
+    }
+
+    .opening-clock h6 {
+        min-width: 100%;
+        margin-bottom: 0.25rem;
+    }
+}
+
+/* ANIMATION FIX FOR WOW.JS */
+.wow.fadeIn {
+    animation-name: fadeIn;
+    visibility: visible !important;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* LOGO STYLES */
+.footer-item h4 i.fa-swimmer {
+    font-size: 1.5rem;
+    vertical-align: middle;
+}

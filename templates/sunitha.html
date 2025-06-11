@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music - Sunitha</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="/static/css/music.css">
+    <link rel="stylesheet" href="/static/css/artist.css">
+</head>
+<body>
+    <hr>
+    <main>
+      <nav class="main-menu">
+        <div>
+          <div class="user-info">
+            <img
+              src="/static/images/artist7.jpg"
+              alt="user" />
+            <p>Jaya Prakash</p>
+          </div>
+          <ul>
+            <li class="nav-item active">
+              <a href="#">
+                <i class="fa fa-map nav-icon"></i>
+                <span class="nav-text">Discover</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-arrow-trend-up nav-icon"></i>
+                <span class="nav-text">Trending</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-compact-disc nav-icon"></i>
+                <span class="nav-text">Album</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-circle-play nav-icon"></i>
+                <span class="nav-text">Playlist</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-heart nav-icon"></i>
+                <span class="nav-text">Favorites</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul>
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-user nav-icon"></i>
+              <span class="nav-text">Profile</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-gear nav-icon"></i>
+              <span class="nav-text">Settings</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-right-from-bracket nav-icon"></i>
+              <span class="nav-text">Logout</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'home' %}" class="sales-management-btn">Sales
+            </a>
+          </li>
+        </ul>
+<!--        <div class="top-nav-btn">-->
+<!--          <a href="{% url 'home' %}" class="sales-management-btn">SalesManagement</a>-->
+<!--        </div>-->
+      </nav>
+
+      <section class="content">
+        <div class="left-content">
+          <div class="container">
+            <div class="artist-header">
+              <img src="/static/images/artist4.jpg" alt="Sunitha" class="artist-image">
+            <div class="artist-info">
+                <h1 class="artist-name">Sunitha Upadrashta</h1>
+                <p class="artist-followers">1,234,567 monthly listeners</p>
+                <button class="play-button">Play</button>
+                <button class="follow-button">Follow</button>
+            </div>
+        </div>
+
+        <div class="songs-section">
+            <h2 class="section-title">Popular</h2>
+            <ul class="song-list">
+                <a href="/static/audio/sunitha/[iSongs.info] 01 - Neeli Neeli Aakasam.mp3" class="music_name">
+                <li class="song-item" data-song="Neeli Neeli Aakasam" data-duration="3:45">
+                    <div class="song-number">1</div>
+                    <div class="song-title">Neeli Neeli Aakasam</div>
+                    <div class="song-plays">12,345,678</div>
+                    <div class="song-duration">3:45</div>
+                </li>
+                </a>
+
+                <hr class="divider">
+
+                <a href="/static/audio/sunitha/[iSongs.info] 06 - Gundu Sudhi.mp3" class="music_name">
+                <li class="song-item">
+                    <div class="song-number">2</div>
+                    <div class="song-title">Gundu Sudhi</div>
+                    <div class="song-plays">9,876,543</div>
+                    <div class="song-duration">3:22</div>
+                </li>
+                </a>
+
+                <hr class="divider">
+
+                <a href="/static/audio/sunitha/[iSongs.info] 02 - Noonoogu Meesalodu.mp3" class="music_name">
+                <li class="song-item">
+                    <div class="song-number">3</div>
+                    <div class="song-title">Nunugu Misalodu</div>
+                    <div class="song-plays">8,765,432</div>
+                    <div class="song-duration">4:12</div>
+                </li>
+                </a>
+
+                <hr class="divider">
+
+                <a href="/static/audio/sunitha/Bangala Kathamlo-SenSongsMp3.Co.mp3" class="music_name">
+                <li class="song-item">
+                    <div class="song-number">4</div>
+                    <div class="song-title">Bangala Kathamulo</div>
+                    <div class="song-plays">7,654,321</div>
+                    <div class="song-duration">3:58</div>
+                </li>
+                </a>
+
+                <hr class="divider">
+
+                <a href="/static/audio/sunitha/[iSongs.info] 04 - Em Sandeham Ledu.mp3" class="music_name">
+                <li class="song-item">
+                    <div class="song-number">5</div>
+                    <div class="song-title">Em Sandeham Ledu</div>
+                    <div class="song-plays">6,543,210</div>
+                    <div class="song-duration">3:15</div>
+                </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+        </div>
+
+
+
+
+        <div class="right-content">
+          <div class="music-player">
+            <div class="album-cover">
+              <img src="/static/images/artist4.jpg" id="rotatingImage" alt="" />
+              <span class="point"></span>
+            </div>
+
+            <h2 id="nowPlayingTitle">Neeli Neeli Aakasam</h2>
+            <p id="nowPlayingArtist">Sunitha</p>
+
+            <audio id="song">
+              <source src="/static/audio/sunitha/[iSongs.info] 01 - Neeli Neeli Aakasam.mp3" type="audio/mpeg" />
+            </audio>
+
+            <input type="range" value="0" id="progress" />
+
+            <div class="controls">
+              <button class="backward">
+                <i class="fa-solid fa-backward"></i>
+              </button>
+              <button class="play-pause-btn">
+                <i class="fa-solid fa-play" id="controlIcon"></i>
+              </button>
+              <button class="forward">
+                <i class="fa-solid fa-forward"></i>
+              </button>
+            </div>
+              </div>
+              <div class="recommended-songs">
+                <div class="music-player">
+
+
+                    <h3>ABOUT</h3>
+                </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script>
+    <script src="/static/js/music.js"></script>
+  </body>
+</html>

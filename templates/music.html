@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="/static/css/music.css">
+</head>
+<body>
+    <hr>
+    <main>
+      <nav class="main-menu">
+        <div>
+            <div class="user-info">
+              <img
+                src="/static/images/artist7.jpg"
+                alt="user"/>
+              <p>Jaya Prakash</p>
+          </div>
+          <ul>
+            <li class="nav-item active">
+              <a href="#">
+                <i class="fa fa-map nav-icon"></i>
+                <span class="nav-text">Discover</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-arrow-trend-up nav-icon"></i>
+                <span class="nav-text">Trending</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-compact-disc nav-icon"></i>
+                <span class="nav-text">Album</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-circle-play nav-icon"></i>
+                <span class="nav-text">Playlist</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-heart nav-icon"></i>
+                <span class="nav-text">Favorites</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul>
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-user nav-icon"></i>
+              <span class="nav-text">Profile</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-gear nav-icon"></i>
+              <span class="nav-text">Settings</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="logout">
+              <i class="fa fa-right-from-bracket nav-icon"></i>
+              <span class="nav-text">Logout</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'home' %}" class="sales-management-btn">Sales
+            </a>
+          </li>
+        </ul>
+<!--        <div class="top-nav-btn">-->
+<!--          <a href="{% url 'home' %}" class="sales-management-btn">SalesManagement</a>-->
+<!--        </div>-->
+      </nav>
+
+      <section class="content">
+        <div class="left-content">
+          <div class="slider-container">
+            <h1>Popular Playlist</h1>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <img
+                    src="/static/images/music1.jpg" />
+                  <div class="slide-overlay">
+                    <h2>Midnight Moods</h2>
+                    <button>
+                      Listen Now <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img
+                    src="/static/images/music2.jpg" />
+                  <div class="slide-overlay">
+                    <h2>Party Starters</h2>
+                    <button>
+                      Listen Now <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img
+                    src="/static/images/music3.jpg" />
+                  <div class="slide-overlay">
+                    <h2>Relaxing Tones</h2>
+                    <button>
+                      Listen Now <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img
+                    src="/static/images/music4.jpg" />
+                  <div class="slide-overlay">
+                    <h2>Smooth Jazz Journey</h2>
+                    <button>
+                      Listen Now <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img
+                    src="/static/images/music5.jpg" />
+                  <div class="slide-overlay">
+                    <h2>Uplifting Rhythms</h2>
+                    <button>
+                      Listen Now <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="artists">
+            <h1>Featured Artists</h1>
+            <div class="artist-container containers">
+              <a href="shreya_goshal" class="artist-link">
+              <div class="artist">
+                <img
+                  src="/static/images/artist1.jpg"
+                  alt="" />
+                <p>Shreya Ghoshal</p>
+              </div>
+              </a>
+
+              <a href="geetha_madhuri" class="artist-link">
+              <div class="artist">
+                <img
+                  src="/static/images/artist2.jpg"
+                  alt="" />
+                <p>Geetha Madhuri</p>
+              </div>
+              </a>
+
+              <a href="sid_sriram" class="artist-link">
+              <div class="artist">
+                <img
+                  src="/static/images/artist3.jpg"
+                  alt="" />
+                <p>Sid Sriram</p>
+              </div>
+              </a>
+
+              <a href="sunitha" class="artist-link">
+              <div class="artist">
+                <img
+                  src="/static/images/artist4.jpg"
+                  alt="" />
+                <p>Sunitha Upadrashta</p>
+              </div>
+              </a>
+
+              <a href="anurag_kulkarni" class="artist-link">
+              <div class="artist">
+                <img
+                  src="/static/images/artist5.jpg"
+                  alt="" />
+                <p>Anurag Kulkarni</p>
+              </div>
+              </a>
+
+              <a href="ramya_behara" class="artist-link">
+              <div class="artist">
+                <img
+                  src="/static/images/artist6.jpg"
+                  alt="" />
+                <p>Ramya Behara</p>
+              </div>
+              </a>
+
+              <a href="devi_sri_prasad" class="artist-link">
+              <div class="artist">
+                <img
+                  src="/static/images/artist7.jpg"
+                  alt="" />
+                <p>Devi Sri Prasad</p>
+              </div>
+              </a>
+
+              <a href="k_s_chitra" class="artist-link">
+              <div class="artist">
+                <img
+                  src="/static/images/artist8.jpg"
+                  alt="" />
+                <p>K. S. Chithra</p>
+              </div>
+              </a>
+
+              <a href="prakash" class="artist-link">
+              <div class="artist">
+                <img
+                  src="/static/images/artist8.jpg"
+                  alt="" />
+                <p>Prakash</p>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="albums">
+            <h1>Recommended Albums</h1>
+            <div class="album-container containers">
+              <div class="album">
+                <div class="album-frame">
+                  <img
+                    src="/static/images/album1.jpg"
+                    alt="" />
+                </div>
+                <div>
+                  <h2>Let's Play - Prabhas</h2>
+                  <p>14.8K Fans · 28 Songs</p>
+                </div>
+              </div>
+
+              <div class="album">
+                <div class="album-frame">
+                  <img
+                    src="/static/images/album2.jpg"
+                    alt="" />
+                </div>
+                <div>
+                  <h2>Let's Play - Mahesh Babu</h2>
+                  <p>7.8K Fans · 35 Songs</p>
+                </div>
+              </div>
+
+              <div class="album">
+                <div class="album-frame">
+                  <img
+                    src="/static/images/album3.jpg"
+                    alt="" />
+                </div>
+                <div>
+                  <h2>Let's Play - Devi Sri Prasad</h2>
+                  <p>11.1K Fans · 50 Songs</p>
+                </div>
+              </div>
+
+              <div class="album">
+                <div class="album-frame">
+                  <img
+                    src="/static/images/album4.jpg"
+                    alt="" />
+                </div>
+                <div>
+                  <h2>DJ Remixes</h2>
+                  <p>23.3K Fans . 29 Songs</p>
+                </div>
+              </div>
+
+              <div class="album">
+                <div class="album-frame">
+                  <img
+                    src="/static/images/album5.jpg"
+                    alt="" />
+                </div>
+                <div>
+                  <h2>Broken Heart</h2>
+                  <p>90K Fans · 47 Songs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="right-content">
+          <div class="recommended-songs">
+            <h1>Recommended Songs</h1>
+            <div class="song-container">
+              <div class="song" data-index="0" data-url="/static/audio/recommend/Tharagathi Gadhi.mp3">
+                <div class="song-img">
+                  <img src="/static/images/recmnd1.jpg" alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Tharagathi Gadhi</h2>
+                  <p>Kaala Bhairava</p>
+                </div>
+                <span>4:33</span>
+              </div>
+
+              <div class="song" data-index="1" data-url="/static/audio/recommend/[iSongs.info] 02 - Nee Chitram Choosi.mp3">
+                <div class="song-img">
+                  <img src="/static/images/recmnd2.jpg" alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Nee Chitram Choosi</h2>
+                  <p>Anurag Kulkarni</p>
+                </div>
+                <span>4:23</span>
+              </div>
+
+              <div class="song" data-index="2" data-url="/static/audio/recommend/[iSongs.info] 05 - Niddura Pothunna.mp3">
+                <div class="song-img">
+                  <img src="/static/images/recmnd3.jpg" alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Niddura Potunna</h2>
+                  <p>Shankar Mahadevan Garu</p>
+                </div>
+                <span>3:10</span>
+              </div>
+
+              <div class="song" data-index="3" data-url="/static/audio/recommend/[iSongs.info] 01 - Niluvadhamu Ninu Epudaina.mp3">
+                <div class="song-img">
+                  <img src="/static/images/recmnd4.jpg" alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Niluvadhamu Ninu Epudaina</h2>
+                  <p>Karthik & Sumangali</p>
+                </div>
+                <span>3:30</span>
+              </div>
+
+              <div class="song" data-index="4" data-url="/static/audio/recommend/[iSongs.info] 03 - Idhedho Bagundhe.mp3">
+                <div class="song-img">
+                  <img src="/static/images/recmnd5.jpg" alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Idhedho Bagundhe</h2>
+                  <p>Vijay Prakash & Anitha Karthikeyan</p>
+                </div>
+                <span>3:24</span>
+              </div>
+
+              <div class="song" data-index="5" data-url="/static/audio/recommend/[iSongs.info] 01 - Konte Chooputho.mp3">
+                <div class="song-img">
+                  <img src="/static/images/recmnd6.jpg" alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Konte Chooputho</h2>
+                  <p>Belly Raj, Deepa Mariam</p>
+                </div>
+                <span>3:54</span>
+              </div>
+
+              <div class="song" data-index="6" data-url="/static/audio/recommend/[iSongs.info] 01 - Chirunama Thana Chirunama.mp3">
+                <div class="song-img">
+                  <img src="/static/images/recmnd7.jpg" alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Chirunama Thana Chirunama</h2>
+                  <p>Yazin Nizar</p>
+                </div>
+                <span>4:39</span>
+              </div>
+
+              <div class="song" data-index="7" data-url="/static/audio/recommend/[iSongs.info] 02 - Nuvvu Navvukuntu.mp3">
+                <div class="song-img">
+                  <img src="/static/images/recmnd8.jpg" alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Nuvvu Navvukuntu</h2>
+                  <p>Kapil Kapilan</p>
+                </div>
+                <span>4:20</span>
+              </div>
+
+              <div class="song" data-index="8" data-url="/static/audio/recommend/Pranam Kanna - InstaSong.In.mp3">
+                <div class="song-img">
+                  <img src="/static/images/recmnd10.jpg" alt="" />
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="song-title">
+                  <h2>Pranam Kanna</h2>
+                  <p>Kailash Kher</p>
+                </div>
+                <span>4:28</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="music-player">
+            <div class="album-cover">
+              <img src="/static/images/recmnd1.jpg" id="rotatingImage" alt="" />
+              <span class="point"></span>
+            </div>
+
+            <h2 id="nowPlayingTitle">Tharagathi Gadhi</h2>
+            <p id="nowPlayingArtist">Kaala Bhairava</p>
+
+            <audio id="song">
+              <source src="/static/audio/recommend/Tharagathi Gadhi.mp3" type="audio/mpeg" />
+            </audio>
+
+            <input type="range" value="0" id="progress" />
+
+            <div class="controls">
+              <button class="backward">
+                <i class="fa-solid fa-backward"></i>
+              </button>
+              <button class="play-pause-btn">
+                <i class="fa-solid fa-play" id="controlIcon"></i>
+              </button>
+              <button class="forward">
+                <i class="fa-solid fa-forward"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script>
+    <script src="/static/js/music.js"></script>
+  </body>
+</html>
