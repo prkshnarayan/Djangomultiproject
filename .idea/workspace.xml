@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b40376f4-f3b5-428d-8fb8-24203f28ee77" name="Changes" comment="second commit1">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SalesManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Djangomultiproject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SalesManagement/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Djangomultiproject/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SalesManagement/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Djangomultiproject/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SalesManagement/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Djangomultiproject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SalesManagement/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Djangomultiproject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SalesManagement/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Djangomultiproject/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salesapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/salesapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salesapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/salesapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salesapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/salesapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,17 +43,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.views.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/jayap/Desktop/Django project/InstagramClone",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.views.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jayap/Desktop/Django project/InstagramClone&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.grazie&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jayap\Desktop\Django project\SalesManagement" />
@@ -130,7 +115,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733897364329</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="second commit1">
+      <option name="closed" value="true" />
+      <created>1749621807256</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749621807256</updated>
+    </task>
+    <task id="LOCAL-00007" summary="second commit1">
+      <option name="closed" value="true" />
+      <created>1749621953688</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749621953688</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
