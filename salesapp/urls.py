@@ -1,10 +1,9 @@
 from django.urls import path
-
 from salesapp import views
-
 from django.contrib.auth import views as auth_views
-
 from django.urls import reverse_lazy
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 urlpatterns = [
@@ -17,9 +16,10 @@ urlpatterns = [
     path('delete/<int:id>', views.delete_fun, name='delete'),
     path('logout/', views.logout_fun, name='logout'),
     path('display employee/', views.employee_fun, name='employee')
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 
 urlpatterns += [
     path('accounts/login/', auth_views.LoginView.as_view(next_page=reverse_lazy('login')), name="login"),
 ]
+

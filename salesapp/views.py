@@ -34,7 +34,7 @@ from salesapp.models import Student
 def signup(request):
     if request.method == "POST":
         name = request.POST["txtname"]
-        email = request.POST["txtmail"]
+        email = request.POST["txtemail"]
         password = request.POST["pswd"]
 
         if User.objects.filter(Q(username=name) | Q(email=email)).exists():
