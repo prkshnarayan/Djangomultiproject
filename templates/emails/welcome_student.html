@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Our Program</title>
+</head>
+<body style="margin:0; padding:0; font-family: Arial, sans-serif; color: #333333; background-color: #f5f7ff;">
+    <!-- Main Container -->
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f5f7ff">
+        <tr>
+            <td align="center" valign="top">
+                <!-- Email Container -->
+                <table width="600" border="0" cellspacing="0" cellpadding="0" style="margin:40px auto; background-color:#ffffff; border-radius:8px; box-shadow:0 4px 20px rgba(0,0,0,0.08); border:1px solid #e9ecef;">
+                    <!-- Header -->
+                    <tr>
+                        <td align="center" style="padding:40px 20px 30px; background:linear-gradient(135deg, #4361ee, #3f37c9); color:#ffffff; position:relative; overflow:hidden;">
+                        <!-- Use one of these options: -->
+                        <!-- Option 1: Absolute URL -->
+                            <img src="https://media.istockphoto.com/id/1337197025/vector/elegant-and-stylish-jp-logo-design-for-your-company-jp-letter-logo-jp-logo-for-luxury.jpg?s=170667a&w=0&k=20&c=ZihvHLtPAvfIgZhNjOpXxmpr2P0k4_Q_pqwzpjXjAqU="
+                                alt="Company Logo"
+                                width="150"
+                                style="max-width:150px; height:auto; margin-bottom:20px; display:block;">
+                                <h2 style="margin:0; font-size:28px; font-weight:700; letter-spacing:-0.5px; position:relative; z-index:1; text-shadow:0 1px 3px rgba(0,0,0,0.1);">Welcome to Our Sales Management System</h2>
+                        </td>
+                    </tr>
+
+                    <!-- Content -->
+                    <tr>
+                        <td style="padding:40px;">
+                            <h3 style="color:#4361ee; margin-top:0; font-size:22px; font-weight:600; margin-bottom:25px;">Dear {{ student.name }},</h3>
+                            <p style="margin-bottom:20px; font-size:16px;">We're thrilled to welcome you to our Sales Management System! Your registration is now complete, and we're excited to have you on board.</p>
+
+                            <!-- Divider -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="1" style="background:linear-gradient(90deg, transparent, #e9ecef, transparent); margin:30px 0; position:relative;">
+                                        <span style="position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:40px; height:3px; background-color:#4cc9f0; border-radius:3px;"></span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p style="margin-bottom:20px; font-size:16px;">Here are your account details:</p>
+
+                            <!-- Details Table -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin:30px 0; background-color:#f8f9fa; border-radius:8px; padding:25px; box-shadow:inset 0 2px 4px rgba(0,0,0,0.03);">
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td style="padding-bottom:12px; padding-left:30px; position:relative; font-size:15px;">
+                                                    <span style="position:absolute; left:0; top:8px; width:12px; height:12px; background-color:#4cc9f0; border-radius:50%; box-shadow:0 0 0 3px rgba(76,201,240,0.3);"></span>
+                                                    <strong style="color:#3f37c9; font-weight:600; min-width:150px; display:inline-block;">Name: </strong> {{ student.name }}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom:12px; padding-left:30px; position:relative; font-size:15px;">
+                                                    <span style="position:absolute; left:0; top:8px; width:12px; height:12px; background-color:#4cc9f0; border-radius:50%; box-shadow:0 0 0 3px rgba(76,201,240,0.3);"></span>
+                                                    <strong style="color:#3f37c9; font-weight:600; min-width:150px; display:inline-block;">Email: </strong> {{ student.email }}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom:12px; padding-left:30px; position:relative; font-size:15px;">
+                                                    <span style="position:absolute; left:0; top:8px; width:12px; height:12px; background-color:#4cc9f0; border-radius:50%; box-shadow:0 0 0 3px rgba(76,201,240,0.3);"></span>
+                                                    <strong style="color:#3f37c9; font-weight:600; min-width:150px; display:inline-block;">Date of Joining: </strong> {{ student.date_of_joining }}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom:12px; padding-left:30px; position:relative; font-size:15px;">
+                                                    <span style="position:absolute; left:0; top:8px; width:12px; height:12px; background-color:#4cc9f0; border-radius:50%; box-shadow:0 0 0 3px rgba(76,201,240,0.3);"></span>
+                                                    <strong style="color:#3f37c9; font-weight:600; min-width:150px; display:inline-block;">Place: </strong> {{ student.place }}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom:12px; padding-left:30px; position:relative; font-size:15px;">
+                                                    <span style="position:absolute; left:0; top:8px; width:12px; height:12px; background-color:#4cc9f0; border-radius:50%; box-shadow:0 0 0 3px rgba(76,201,240,0.3);"></span>
+                                                    <strong style="color:#3f37c9; font-weight:600; min-width:150px; display:inline-block;">Education: </strong> {{ student.education }}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom:12px; padding-left:30px; position:relative; font-size:15px;">
+                                                    <span style="position:absolute; left:0; top:8px; width:12px; height:12px; background-color:#4cc9f0; border-radius:50%; box-shadow:0 0 0 3px rgba(76,201,240,0.3);"></span>
+                                                    <strong style="color:#3f37c9; font-weight:600; min-width:150px; display:inline-block;">Skills: </strong> {{ student.skills }}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom:12px; padding-left:30px; position:relative; font-size:15px;">
+                                                    <span style="position:absolute; left:0; top:8px; width:12px; height:12px; background-color:#4cc9f0; border-radius:50%; box-shadow:0 0 0 3px rgba(76,201,240,0.3);"></span>
+                                                    <strong style="color:#3f37c9; font-weight:600; min-width:150px; display:inline-block;">Assigned Sales Person: </strong> {{ student.sales_person.username }}
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Button -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin:35px 0;">
+                                <tr>
+                                    <td align="center">
+                                        <a href="/accounts/login" style="display:inline-block; padding:14px 32px; background:linear-gradient(135deg, #4361ee, #3f37c9); color:#ffffff !important; text-decoration:none; border-radius:50px; font-weight:600; letter-spacing:0.5px; box-shadow:0 4px 15px rgba(67,97,238,0.3);">Login to Your Account</a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p style="margin-bottom:20px; font-size:16px;">If you have any questions or need assistance, please don't hesitate to contact our support team at <a href="mailto:support@yourcompany.com" style="color:#4361ee; text-decoration:none;">support@yourcompany.com</a>.</p>
+                        </td>
+                    </tr>
+
+                    <!-- Auto-generated notice -->
+                    <tr>
+                        <td style="background-color:#fff8f8; padding:15px; text-align:center; font-size:13px; color:#e63946; border-top:1px solid #ffebee; margin-top:30px;">
+                            Please do not reply to this mail. This is an autogenerated mail.
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="text-align:center; padding:30px 40px; background-color:#f8f9fa; color:#6c757d; font-size:14px; border-top:1px solid #e9ecef;">
+                            <p style="margin-bottom:10px; color:#6c757d;">Best regards,<br />
+                            <strong style="color:#3f37c9;">Sales Management Team</strong></p>
+
+                            <p style="margin-bottom:10px;">
+                                <small style="font-size:13px; opacity:0.8;">
+                                    © {% now "Y" %} Your Company Name. All rights reserved.<br />
+                                    <a href="/" style="color:#6c757d; text-decoration:none;">salesmanagement.com</a> |
+                                    <a href="/privacy" style="color:#6c757d; text-decoration:none;">Privacy Policy</a>
+                                </small>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
