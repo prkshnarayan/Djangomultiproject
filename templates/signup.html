@@ -3,37 +3,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Registration Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Sales & Music System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/signup.css' %}">
 </head>
 <body>
-<h1>Welcome to SignUp Page</h1>
-<form method="POST">
-    {% csrf_token %}
-    <table>
-        <tr>
-            <th align="left">Name:</th>
-            <td><input type="text" name="txtname" required></td>
-        </tr>
-        <tr>
-            <th align="left">Email:</th>
-            <td><input type="email" name="txtemail" required></td>
-        </tr>
-        <tr>
-            <th align="left">Password</th>
-            <td><input type="password" name="pswd"></td>
-        </tr>
-        <tr>
-            <th align="left"><input type="submit" value="SIGN UP"></th>
-            <td>Existing User? <a href="/">LOGIN</a></td>
-        </tr>
+    <div class="signup-container">
+        <div class="logo">
+            <i class="fas fa-user-plus"></i>
+        </div>
+        <h1>Create Your Account</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label class="label" for="txtname">Full Name</label>
+                <div class="input-group">
+                    <i class="fas fa-user input-icon"></i>
+                    <input type="text" name="txtname" id="txtname" class="form-control" placeholder="Enter your full name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="label" for="txtemail">Email Address</label>
+                <div class="input-group">
+                    <i class="fas fa-envelope input-icon"></i>
+                    <input type="email" name="txtemail" id="txtemail" class="form-control" placeholder="Enter your email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="label" for="pswd">Password</label>
+                <div class="input-group">
+                    <i class="fas fa-lock input-icon"></i>
+                    <input type="password" name="pswd" id="pswd" class="form-control" placeholder="Create a password" required>
+                    <i class="fas fa-eye password-toggle" id="togglePassword"></i>
+                </div>
+                <div class="password-hint">
+                    <small>Use 8 or more characters with a mix of letters, numbers & symbols</small>
+                </div>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-signup" type="submit">
+                    <i class="fas fa-user-plus"></i> SIGN UP
+                </button>
+            </div>
             {% if message %}
-            <tr>
-                <h3 style="color:red">UserName or Email already exists</h3>
-            </tr>
+            <div class="error-message">
+                <i class="fas fa-exclamation-circle"></i> {{ message }}
+            </div>
             {% endif %}
-    </table>
+            <div class="form-footer">
+                <p>Already have an account? <a href="/" class="text-link">Login here</a></p>
+            </div>
+        </form>
+    </div>
 
-</form>
+    <script>
+        // Password toggle functionality
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#pswd');
+
+        togglePassword.addEventListener('click', function (e) {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
 </body>
 </html>
