@@ -139,9 +139,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'  # or your email provider's SMTP
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'jayaprakashbommisetty2580@gmail.com'
-EMAIL_HOST_PASSWORD = 'ohlk ryqg uxak sxao'  # Use environment variables in production!
-DEFAULT_FROM_EMAIL = 'jayaprakashbommisetty2580@gmail.com'
+EMAIL_HOST_USER = 'yourmail@gmail.com' # add your mail ID
+EMAIL_HOST_PASSWORD = ''  # Use environment variables in production! 
+DEFAULT_FROM_EMAIL = 'yourmail@gmail.com' # add your mail ID
 
 # # settings.py (production)
 # SECURE_HSTS_SECONDS = 31536000  # 1 year
